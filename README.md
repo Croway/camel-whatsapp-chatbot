@@ -21,3 +21,6 @@ Once everything is set up execute the following command
 `mvn package spring-boot:run`
 
 and initiate the conversation on WhatsApp
+
+https://github.com/Croway/camel-whatsapp-chatbot/assets/34543311/b3d65fc2-c354-4837-b535-0c1e78db2f37
+
