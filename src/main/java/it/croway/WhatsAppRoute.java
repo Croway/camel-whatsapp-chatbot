@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
  *
  */
 @Component
-public class MySpringBootRouter extends RouteBuilder {
+public class WhatsAppRoute extends RouteBuilder {
 
 	@Value("${camel.component.whatsapp.phone-number-id}")
 	private String phoneNumberId;
 
 	private ConversationalAIAgent agent;
 
-	public MySpringBootRouter(ConversationalAIAgent agent) {
+	public WhatsAppRoute(ConversationalAIAgent agent) {
 		this.agent = agent;
 	}
 
