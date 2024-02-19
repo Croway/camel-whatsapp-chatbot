@@ -4,7 +4,7 @@ This example shows how to integrate a conversational AI with Camel capabilities.
 
 ## Workflow
 
-In this example langchain4j is integrated with openapi and the Apache Camel contributing guide is ingested as an embedding, once the application is started a conversation with the model can be done via WhatsApp.
+In this example LangChain4j is integrated with openapi and the Apache Camel contributing guide is ingested as an embedding, once the application is started a conversation with the model can be done via WhatsApp.
 
 ## How to run
 

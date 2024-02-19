@@ -7,17 +7,17 @@ import org.apache.camel.component.whatsapp.model.TextMessage;
 import org.apache.camel.component.whatsapp.model.TextMessageRequest;
 import org.springframework.stereotype.Component;
 
-@Converter(generateLoader = true)
+@Converter
 @Component
-public class WhatsAppTypeConverters implements TypeConverters {
+public class CamelWhatsAppTypeConverters implements TypeConverters {
 
 	/**
-	 * Create an object that can be serialized to WhatsApp APIs, a variable CamelWhatsappPhoneNumber is expected
+	 * Create an object that can be serialized to WhatsApp APIs, a variable PhoneNumber is expected
 	 * as well as a body containing the String message
 	 */
 	@Converter
 	public static TextMessageRequest toTextMessageRequest(String message, Exchange exchange) {
-		String phoneNumber = exchange.getVariable("CamelWhatsappPhoneNumber", String.class);
+		String phoneNumber = exchange.getVariable("PhoneNumber", String.class);
 
 		TextMessageRequest responseMessage = new TextMessageRequest();
 		responseMessage.setTo(phoneNumber);
